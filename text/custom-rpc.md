@@ -3,7 +3,7 @@
 `nodes/custom-rpc`
 [
 	![Try on playground](https://img.shields.io/badge/Playground-Try%20it!-brightgreen?logo=Parity%20Substrate)
-](https://playground-staging.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fnodes%2Frpc-node%2Fsrc%2Fservice.rs)
+](https://playground.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fnodes%2Frpc-node%2Fsrc%2Fservice.rs)
 [
 	![View on GitHub](https://img.shields.io/badge/Github-View%20Code-brightgreen?logo=github)
 ](https://github.com/substrate-developer-hub/recipes/tree/master/nodes/rpc-node/src/service.rs)
@@ -11,7 +11,7 @@
 `runtimes/api-runtime`
 [
 	![Try on playground](https://img.shields.io/badge/Playground-Try%20it!-brightgreen?logo=Parity%20Substrate)
-](https://playground-staging.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fruntimes%2Fapi-runtime%2Fsrc%2Flib.rs)
+](https://playground.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fruntimes%2Fapi-runtime%2Fsrc%2Flib.rs)
 [
 	![View on GitHub](https://img.shields.io/badge/Github-View%20Code-brightgreen?logo=github)
 ](https://github.com/substrate-developer-hub/recipes/tree/master/runtimes/api-runtime/src/lib.rs)
@@ -19,7 +19,7 @@
 Remote Procedure Calls, or RPCs, are a way for an external program (eg. a frontend) to communicate
 with a Substrate node. They are used for checking storage values, submitting transactions, and
 querying the current consensus authorities. Substrate comes with several
-[default RPCs](https://polkadot.js.org/api/substrate/rpc.html). In many cases it is useful to add
+[default RPCs](https://polkadot.js.org/docs/substrate/rpc). In many cases it is useful to add
 custom RPCs to your node. In this recipe, we will add three custom RPCs to our node. The first is trivial, the second calls into a [custom runtime API](./runtime-api.md), and the third interfaces with consensus.
 
 ## The RPC Extensions Builder

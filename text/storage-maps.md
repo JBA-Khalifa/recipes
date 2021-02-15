@@ -3,7 +3,7 @@
 `pallets/simple-map`
 [
 	![Try on playground](https://img.shields.io/badge/Playground-Try%20it!-brightgreen?logo=Parity%20Substrate)
-](https://playground-staging.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Fsimple-map%2Fsrc%2Flib.rs)
+](https://playground.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Fsimple-map%2Fsrc%2Flib.rs)
 [
 	![View on GitHub](https://img.shields.io/badge/Github-View%20Code-brightgreen?logo=github)
 ](https://github.com/substrate-developer-hub/recipes/tree/master/pallets/simple-map/src/lib.rs)
@@ -33,7 +33,7 @@ have:
     use the
     [`blake2_128_concat`](https://substrate.dev/rustdocs/v2.0.0/frame_support/trait.Hashable.html#tymethod.blake2_128_concat)
     hasher. More on this below.
--   `T::AccountId => u32` - The specific key and value tyes of the map. This is a map from
+-   `T::AccountId => u32` - The specific key and value type of the map. This is a map from
     `AccountId`s to `u32`s.
 
 ## Choosing a Hasher

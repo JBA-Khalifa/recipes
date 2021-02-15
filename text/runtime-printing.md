@@ -3,7 +3,7 @@
 `pallets/hello-substrate`
 [
 	![Try on playground](https://img.shields.io/badge/Playground-Try%20it!-brightgreen?logo=Parity%20Substrate)
-](https://playground-staging.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Fhello-substrate%2Fsrc%2Flib.rs)
+](https://playground.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Fhello-substrate%2Fsrc%2Flib.rs)
 [
 	![View on GitHub](https://img.shields.io/badge/Github-View%20Code-brightgreen?logo=github)
 ](https://github.com/substrate-developer-hub/recipes/tree/master/pallets/hello-substrate/src/lib.rs)
@@ -152,6 +152,20 @@ The next line demonstrates using `debug::info!` macro to log to the screen and a
 variable's content. The syntax inside the macro is very similar to what regular rust macro
 `println!` takes.
 
+You can specify the logger target with 
+```rust, ignore
+debug::debug!(target: "mytarget", "called by {:?}", sender);
+```
+Now you can filter logs with
+```
+kitchen-node --dev -lmytarget=debug
+```
+If you do not specify the logger target, it will be set to the crate's name (not to `runtime`!).
+
 **Runtime logger note:** When we execute the runtime in native, `debug::info!` messages are printed.
 However, if we execute the runtime in Wasm, then an additional step to initialise
-[RuntimeLogger](https://substrate.dev/rustdocs/v2.0.0/frame_support/debug/struct.RuntimeLogger.html) is required.
+[RuntimeLogger](https://substrate.dev/rustdocs/v2.0.0/frame_support/debug/struct.RuntimeLogger.html) is required:
+```
+debug::RuntimeLogger::init();
+```
+You'll need to call this inside every pallet dispatchable call before logging.

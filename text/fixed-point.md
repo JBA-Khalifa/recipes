@@ -3,7 +3,7 @@
 `pallets/fixed-point`
 [
 	![Try on playground](https://img.shields.io/badge/Playground-Try%20it!-brightgreen?logo=Parity%20Substrate)
-](https://playground-staging.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Ffixed-point%2Fsrc%2Flib.rs)
+](https://playground.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Ffixed-point%2Fsrc%2Flib.rs)
 [
 	![View on GitHub](https://img.shields.io/badge/Github-View%20Code-brightgreen?logo=github)
 ](https://github.com/substrate-developer-hub/recipes/tree/master/pallets/fixed-point/src/lib.rs)
@@ -11,7 +11,7 @@
 `pallets/compounding-interest`
 [
 	![Try on playground](https://img.shields.io/badge/Playground-Try%20it!-brightgreen?logo=Parity%20Substrate)
-](https://playground-staging.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Fcompounding-interest%2Fsrc%2Flib.rs)
+](https://playground.substrate.dev/?deploy=recipes&files=%2Fhome%2Fsubstrate%2Fworkspace%2Fpallets%2Fcompounding-interest%2Fsrc%2Flib.rs)
 [
 	![View on GitHub](https://img.shields.io/badge/Github-View%20Code-brightgreen?logo=github)
 ](https://github.com/substrate-developer-hub/recipes/tree/master/pallets/compounding-interest/src/lib.rs)
@@ -178,7 +178,7 @@ integers, and we decide in advance to consider some of the place values fraction
 saying we'll omit the decimal point when talking about money and all agree that "1995" actually
 _means_ 19.95 €. This is exactly how Substrate's
 [Balances pallet](https://substrate.dev/rustdocs/v2.0.0/pallet_balances/index.html) works, a tradition that's
-been in blockchain since Bitcon. In our example we will treat 16 bits as integer values, and 16 as
+been in blockchain since Bitcoin. In our example we will treat 16 bits as integer values, and 16 as
 fractional, just as substrate-fixed's `U16F16` did.
 
 If you're rusty or unfamiliar with place values in the
